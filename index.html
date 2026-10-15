@@ -1,40 +1,89 @@
-index.
-html<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PayDayTube - Venda para o Mundo Todo</title>
+    <title>PayDayTube</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #0f0f0f; color: #fff; }
-        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; text-align: center; }
-        h1 { font-size: 2.5em; color: #ff0000; }
-        h2 { font-size: 1.8em; color: #fff; }
-        p { font-size: 1.2em; line-height: 1.6; color: #ccc; }
-        .cta { display: inline-block; background: #ff0000; color: #fff; padding: 15px 40px; font-size: 1.3em; text-decoration: none; border-radius: 8px; margin-top: 30px; }
-        .cta:hover { background: #cc0000; }
-        .video-placeholder { background: #222; width: 100%; height: 400px; margin: 30px 0; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #666; }
-        .benefits { text-align: left; margin: 30px 0; }
-        .benefits li { margin: 15px 0; font-size: 1.1em; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            font-weight: bold;
+            line-height: 1.3;
+            margin-bottom: 15px;
+        }
+
+        h1 .vermelho {
+            color: #ff0000;
+        }
+
+        .subtitulo {
+            font-size: 0.85em;
+            color: #bbb;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .subtitulo .vermelho {
+            color: #ff0000;
+        }
+
+        .caixa-video {
+            width: 100%;
+            max-width: 600px;
+            height: 350px;
+            border: 2px solid #ff0000;
+            border-radius: 12px;
+            background: #111;
+            margin: 0 auto 40px;
+        }
+
+        .botao {
+            display: inline-block;
+            background: #ff0000;
+            color: #fff;
+            font-size: 0.95em;
+            font-weight: bold;
+            padding: 12px 35px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: #cc0000;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Ganhe muito, trabalhe pouco e tenha custo zero no YouTube</h1>
-        <h2>Crie canais em vários países sem custo. Tenha uma audiência global sem mostrar o rosto e ganhe em qualquer moeda.</h2>
-        
-        <div class="video-placeholder">
-            [Cole aqui o link do seu vídeo do YouTube]
-        </div>
 
-        <ul class="benefits">
-            <li>✅ Crie canais sem aparecer</li>
-            <li>✅ Alcance audiência global</li>
-            <li>✅ Receba em dólar, euro e outras moedas</li>
-            <li>✅ Custo zero para começar</li>
-        </ul>
+    <!-- TÍTULO -->
+    <h1>
+        Ganhe muito, trabalhe pouco e<br>
+        tenha custo zero <span class="vermelho">no YouTube</span>.
+    </h1>
 
-        <a href="https://wa.me/seunumero" class="cta">Quero começar agora</a>
-    </div>
+    <!-- SUBTÍTULO -->
+    <p class="subtitulo">
+        Crie canais em vários países sem custo. Tenha uma <span class="vermelho">audiência global</span> sem mostrar o rosto e ganhe em qualquer moeda. <span class="vermelho">Assista ao vídeo</span> e veja como é simples.
+    </p>
+
+    <!-- CAIXA DE VÍDEO -->
+    <div class="caixa-video"></div>
+
+    <!-- BOTÃO -->
+    <a href="#" class="botao">quero mudar agora</a>
+
 </body>
 </html>
